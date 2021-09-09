@@ -7,6 +7,9 @@ public class ExAula04 {
         System.out.println("____________________________");
 
         Aula04 luigi = new Aula04("Luigi",35,1.65);
+        luigi.ganharStamina();
+        luigi.perderStamina();
+        luigi.crescer();
         luigi.status();
     }
 }
