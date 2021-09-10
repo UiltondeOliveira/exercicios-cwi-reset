@@ -1,4 +1,4 @@
-package aula04;
+package personagens;
 
 public class Personagens {
     private String nome;
@@ -58,8 +58,6 @@ public class Personagens {
     public void setStamina(int stamina) {
         this.stamina = stamina;
     }
-
-
 
     public void perderStamina(){
         this.stamina = this.stamina - 10;
