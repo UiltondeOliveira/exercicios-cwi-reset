@@ -1,6 +1,6 @@
-package aula07;
+package ultraemojicombat;
 
-public class Lutar {
+public class UltraEmojiCombat {
     public static void main(String[] args) {
         Lutador[] l = new Lutador[6];
         l[0] = new Lutador("Pretty Boy", "França",31,1.75,68.9,11,3,1);
@@ -10,6 +10,8 @@ public class Lutar {
         l[4] = new Lutador("UfoCobol","Brasil",37,1.7,119.3,5,4,3);
         l[5] = new Lutador("Nerdaart","EUA", 30,1.81,105.7,12,2,4);
 
-        l[5].status();
+        Luta UEC01 = new Luta();
+        UEC01.marcarLuta(l[4],l[5]);
+        UEC01.lutar();
     }
 }

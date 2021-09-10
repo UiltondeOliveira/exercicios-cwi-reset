@@ -1,4 +1,4 @@
-package aula07;
+package ultraemojicombat;
 
 public interface Ring {
     public abstract void apresentar();
