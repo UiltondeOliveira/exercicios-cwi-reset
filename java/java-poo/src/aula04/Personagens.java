@@ -1,6 +1,6 @@
 package aula04;
 
-public class Aula04 {
+public class Personagens {
     private String nome;
     private int idade;
     private double altura;
@@ -8,22 +8,24 @@ public class Aula04 {
     private int moedasColetadas;
     private int qtdeVidas;
 
-    public Aula04() {
+/*    public Personagens() {
         this.nome = "Mario Bros";
         this.idade = 40;
         this.altura = 1.50;
         this.stamina = 100;
         this.moedasColetadas = 0;
         this.qtdeVidas = 1;
+    }*/
 
-    }
 
-/*
-    public Aula04() {
+    public Personagens(String nome, int idade, double altura) {
         this.nome = nome;
         this.idade = idade;
         this.altura = altura;
         this.stamina = 100;
+        this.moedasColetadas = 0;
+        this.qtdeVidas = 1;
+    }
 
     public String getNome() {
         return nome;
@@ -57,7 +59,7 @@ public class Aula04 {
         this.stamina = stamina;
     }
 
- */
+
 
     public void perderStamina(){
         this.stamina = this.stamina - 10;
@@ -99,6 +101,15 @@ public class Aula04 {
             this.qtdeVidas ++;
         }
     }
+
+    public void saltar() {
+        if(this.getNome() == "Mario") {
+            System.out.println("Altura do pulo: " + (getAltura() * 0.5) + " m");
+        }else if(this.getNome() == "Luigi"){
+            System.out.println("Altura do pulo: " + (getAltura() * 2) + " m");
+        }
+    }
+
     public void status() {
         System.out.println("Nome: " + nome + ", idade: " + idade +
                             ", altura: " + altura + "m, Stamina: " + stamina +
